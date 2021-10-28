@@ -1,0 +1,71 @@
+.LoginBoxWrapper{
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+
+    background: linear-gradient(104.3deg, #ee0979 0.48%, #3B4371 100%);
+    text-align: center;
+
+    border-radius: 50%;
+
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-items: center;
+
+    strong{
+        color: #121214;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .FormLogin{
+        align-self: center;
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        position: relative;
+
+        input{
+            background: transparent;
+            border: 0;
+            padding: 24px;
+            resize: none;
+            height: 36px;
+            color: #121214;
+            font-size: 16px;
+            line-height: 24px;
+
+            &:focus {
+            outline: 0;
+            }
+
+            &::placeholder {
+                color: #121214;
+              }
+        }
+
+        .LoginButton{
+            float: left;
+        }
+
+        button{
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            background: #f0c;
+            margin-top: 32px;
+            padding: 0.40px;
+            height: 56px;
+            width: 56px;
+            border-radius: 50%;
+        }
+
+    }
+
+}
