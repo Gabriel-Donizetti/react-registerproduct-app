@@ -8,11 +8,16 @@ export function LoginBox() {
 
            <form action="" className={style.FormLogin}>
 
-            <input type="text" placeholder="Email" />
+           <p>
+           <input type="text" placeholder="Email" />
+           </p>
             <input type="password" placeholder="Password" />
-            <button type="submit" className={style.LoginButton}>Login</button>
-            <button className={style.SignInButton}>SignIn</button>
-           
+
+            <div className="login-btns">
+              <button type="submit" className={style.LoginButton}>Login</button>
+              <button className={style.SignInButton}>SignIn</button>
+            </div>
+
            </form>
        </div>
   )

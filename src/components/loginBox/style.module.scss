@@ -8,9 +8,8 @@
 
     border-radius: 50%;
 
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 100px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -18,18 +17,18 @@
         color: #121214;
         font-size: 32px;
         line-height: 36px;
+        padding-bottom: 15px
     }
 
     .FormLogin{
-        align-self: center;
         padding: 24px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        position: relative;
+        div {
+            display: flex;
+            width: 200px;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
 
         input{
             background: transparent;
@@ -64,6 +63,7 @@
             height: 56px;
             width: 56px;
             border-radius: 50%;
+            cursor: pointer;
         }
 
     }
