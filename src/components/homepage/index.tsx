@@ -1,3 +1,4 @@
+import { Menu } from "../menu"
 import style from "./style.module.scss"
 
 export function HomePage() {
@@ -5,7 +6,7 @@ export function HomePage() {
   return (
    <main className={style.contentWrapper}>
        <div>
-           home page
+         <Menu/>
        </div>
    </main>
   )

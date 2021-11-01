@@ -4,7 +4,7 @@ import { LoginBox } from "./components/loginBox"
 
 export function App() {
 
-  const  user  = false
+  const  user  = true
 
   return (
    <main className={style.contentWrapper}>
