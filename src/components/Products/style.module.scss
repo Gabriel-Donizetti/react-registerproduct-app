@@ -2,19 +2,23 @@
     grid-area: CT;
     background: var(--white);
     height: 100vh;
+    padding: 60px 15px;
 
     h1 {
-        margin: 60px;
         font-size: 30px;
+        margin-bottom: 30px
     }
 
     > div {
-        padding: 0 60px
+        box-shadow: 0 0 15px rgba(0,0,0, 0.2);
+        border-radius: 4px;
+        padding: 15px;
+        background: #fff;
     }
 
     table {
         tr {
-            border: 5px solid var(--white);
+            border: 5px solid #fff;
         }
     }
 }
