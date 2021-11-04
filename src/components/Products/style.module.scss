@@ -7,4 +7,14 @@
         margin: 60px;
         font-size: 30px;
     }
+
+    > div {
+        padding: 0 60px
+    }
+
+    table {
+        tr {
+            border: 5px solid var(--white);
+        }
+    }
 }
