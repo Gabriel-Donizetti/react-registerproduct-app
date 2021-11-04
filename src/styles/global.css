@@ -14,8 +14,8 @@
     --primary: #220f23;
     --secondary: #411d40;
 
-    --tertionary: #006662;
-    --quaternary: #169ba4;
+    --tertionary: #172238;
+    --quaternary:#26375a;
 
     --black: #161616;
     --white: #efefef;
@@ -77,4 +77,5 @@
     background: transparent;
     transition: 0.2s;
     cursor: pointer;
+    color: var(--quaternary)
 }
