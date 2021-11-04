@@ -1,51 +1,63 @@
-.contentWrapper{
+.navbar {
+    grid-area: MN;
+    background: var(--primary);
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 100vh;
 
-    background: #2a2e33;
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 30px;
+        color: var(--white);
 
-    border: 2px;
-    border-color:#7F00FF;
-    border-style: solid;
-
-    .Title{
-        color: #828385;
-        font-size: 32px;
-        line-height: 36px;
-        padding-bottom: 15px;
-        margin-top: 10px;
-        font-family: 'Libre Barcode 128 Text', cursive;
-    }
-    .Categorys{
-        color: #828385;
-        font-size: 24px;
-        line-height: 36px;
-        margin-top: 10px;
+        i {
+            margin-right: 8px
+        }
     }
 
-    ul{
-        list-style: none;
-        height: 100vh;
+    ul  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 30px; 
+
+        li  {
+            display: flex;
+            align-items: center;
+
+            width: inherit;
+            padding: 10px 15px;
+            background: var(--secondary);
+            border-bottom: 4px solid var(--primary);
+            
+            color: var(--white);
+            font-size: 14px;
+            cursor: pointer;        
+
+            transition: opacity .1s;
+
+            i {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 
-    .buttonFilter{
-        color: #828385;
-        font-size: 14px;
-        font-weight: bold;
-        border: none;
-        background: #2a2e33;
-        margin-top: 10px;
-        padding: 0.40px;
-        height: 46px;
-        width: 180px;
-        border-radius: 10%;
-        cursor: pointer;
-        border: 2px;
-        border-color:#7F00FF;
-        border-style: solid;
-    }
+    button {
+        margin-top: auto;
+        padding: 50px;
+        background: inherit;
+        color: var(--white);
+        font-size: 18px;
 
+        i {
+            margin-left: 15px
+        }
+    }
 }

@@ -1,0 +1,21 @@
+.addnewproduct {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: var(--tertionary);
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    i {
+        margin-right: 15px
+    }
+
+    &:hover {
+        opacity: 0.9
+    }
+
+}

@@ -18,22 +18,21 @@ export function Menu(){
     }, [])
 
     return(
-        <main>
-            <div className={style.contentWrapper}>
-                <strong className={style.Title}>Register Product</strong>
-                <strong className={style.Categorys}>Category</strong>
-                <ul className={style.categoryList}>
-                   {categorys?.map(category => {
-                       return(
-                           <li>
-                               <button key={category.category} className={style.buttonFilter}>
-                                   {category.category}
-                               </button>
-                           </li>
-                       )
-                   })}
-                </ul>
-            </div>
-        </main>
+        <nav className={style.navbar}>
+            <h4><i className="fas fa-cogs"></i>Dashboard</h4>
+            <ul className={style.categoryList}>
+                {categorys?.map(category => {
+                    return(
+                        <li key={category.category}>
+                            <i className="fab fa-product-hunt"></i>{category.category}
+                        </li>
+                    )
+                })}
+            </ul>
+            <button>
+                <span>Sign Out</span>
+                <i className="fas fa-sign-out-alt"></i>
+            </button>
+        </nav>
     )
 }

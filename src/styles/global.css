@@ -1,11 +1,80 @@
-*{
-    padding: 0;
+*, ul {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Teko', sans-serif;
 }
 
-body{
-    background: #121214;
-    color: #e1e1e6;
+*, button, input {
+    border: 0;
+    outline: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --primary: #220f23;
+    --secondary: #411d40;
+
+    --tertionary: #006662;
+    --quaternary: #169ba4;
+
+    --black: #161616;
+    --white: #efefef;
+    --neutral: #1b1b1b;
+}
+
+.react-modal-overlay {
+    background: rgba(0,0,0,0.5);
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.react-modal-content {
+    width: 100%;
+    max-width: 550px;
+    background: var(--white);
+    padding: 3rem;
+    position: relative;
+    border-radius: 4px;
+}
+
+.react-modal-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 30px
+}
+
+.react-modal-content .form-group {
+    margin-bottom: 15px
+}
+
+.react-modal-content form button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 25px;
+    background: var(--quaternary);
+    color: var(--white);
+    border-radius: 4px;
+    transition: .2s
+}
+
+.react-modal-content form button:hover {
+    opacity: 0.9
+}
+
+.react-modal-close {
+    position: absolute;
+    font-size: 30px;
+    right: 16px;
+    top: 16px;
+    border: 0;
+    background: transparent;
+    transition: 0.2s;
+    cursor: pointer;
 }

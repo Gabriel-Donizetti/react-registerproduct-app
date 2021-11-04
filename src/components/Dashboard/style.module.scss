@@ -1,0 +1,9 @@
+#dashboard{
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: 230px auto;
+        grid-template-areas: "MN CT";
+        background: var(--white);    
+        position: relative;
+}

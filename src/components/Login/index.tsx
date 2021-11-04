@@ -1,7 +1,6 @@
 import style from "./style.module.scss"
-import { BsLock, BsMailbox } from 'react-icons/bs'
 
-export function LoginBox() {
+export function Login() {
 
   return (
        <div className={style.LoginBoxWrapper}>
@@ -10,10 +9,8 @@ export function LoginBox() {
            <form action="" className={style.FormLogin}>
       
            <p>
-           <BsMailbox size={24} className={style.Icon}/>
            <input type="text" placeholder="Email" />
            </p>
-           <BsLock size={24} className={style.Icon}/>
             <input type="password" placeholder="Password" />
 
             <div className="login-btns">

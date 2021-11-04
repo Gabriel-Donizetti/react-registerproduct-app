@@ -1,14 +1,14 @@
 import style from "./App.module.scss"
-import { HomePage } from "./components/homepage"
-import { LoginBox } from "./components/loginBox"
+import { Dashboard } from "./components/Dashboard"
+import { Login } from "./components/Login"
 
 export function App() {
 
   const  user  = true
 
   return (
-   <main className={style.contentWrapper}>
-     {!!user ? <HomePage/> : <LoginBox/> }
+   <main>
+     {!!user ? <Dashboard/> : <Login/> }
    </main>
   )
 }
