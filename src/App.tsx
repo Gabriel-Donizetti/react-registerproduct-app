@@ -8,7 +8,7 @@ export function App() {
 
   return (
    <main>
-     {!!user ? <Dashboard/> : <Login/> }
+     {!user ? <Dashboard/> : <Login/> }
    </main>
   )
 }

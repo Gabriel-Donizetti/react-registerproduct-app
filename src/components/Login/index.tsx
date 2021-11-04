@@ -3,22 +3,26 @@ import style from "./style.module.scss"
 export function Login() {
 
   return (
-       <div className={style.LoginBoxWrapper}>
-           <strong>Register Products</strong>
+      <div className={style.loginBoxWrapper}>
+            
+            <form action="">
+            
+              <h2><i className="fas fa-cogs"></i>&nbsp;Dashboard</h2>
+              <div className="form-group">
+                <label htmlFor="">Email:</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="">Senha:</label>
+                <input type="password" className="form-control" />
+              </div>
 
-           <form action="" className={style.FormLogin}>
-      
-           <p>
-           <input type="text" placeholder="Email" />
-           </p>
-            <input type="password" placeholder="Password" />
-
-            <div className="login-btns">
-              <button type="submit" className={style.LoginButton}>Login</button>
-              <button className={style.SignInButton}>SignIn</button>
-            </div>
+              <div className={style.loginBtns}>
+                <button type="submit">Login</button>
+                <button>SignIn</button>
+              </div>
 
            </form>
-       </div>
+      </div>
   )
 }
